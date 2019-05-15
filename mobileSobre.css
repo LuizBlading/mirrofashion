@@ -1,0 +1,92 @@
+.body{
+    width: 50%;
+}
+
+header h1{
+    text-align: center;
+}
+
+header .logo img{
+    max-width: 50%;
+}
+
+.sacola{
+    display: nome;
+}
+
+.menu-opcoes{
+    position: static;
+    text-align: center;
+}
+
+.menu-opcoes ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.busca,
+.menu-departamentos,
+.destaque img{
+    margin-right: 0;
+    width: 100%;
+}
+
+.painel{
+    width: auto;
+}
+
+.painel li{
+    width: 30%;
+}
+
+.painel img{
+    width: 100%;
+}
+
+/* Adpatação para Iphone em paisagem */
+
+@media (min-width: 480px){
+    header div{
+        margin: 5px 0;
+    }
+
+    .MirrorFashion{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Adaptação (Media query) para tablets 768px */
+@media (min-width: 720px){
+    header h1{
+        text-align: left;
+    }
+
+    .menu-opcoes{
+        position: absolute;
+    }
+
+    .sacola{
+        display: block;
+    }
+
+    .painel li{
+        width: 15%;
+    }
+
+    .busca, .menu-departamentos{
+        margin-right: 1%;
+        width: 30%;
+    }
+
+    .menu-departamentos nav > ul{
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+
+    .destaque img{
+        width: 69%;
+    }
+}
