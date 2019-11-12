@@ -1,0 +1,178 @@
+.container{
+    width: 96%;
+}
+
+.corpo{
+    width: 96%;
+}
+
+header{
+    width: 96%;
+}
+
+/*
+header .logo{
+    text-align: center;
+    background-image: none;
+    position: relative;
+    margin-left: 100%;
+}
+
+
+header h1 .logo{
+    text-align: center;
+    background-image: none;
+}  */
+
+header .logo img{
+    max-width: 100%;
+    text-align: left;
+    margin-left: 15%;
+    background-image: none;
+    position: relative;
+    
+}
+
+.sacola{
+    display: none;
+    padding-top: 0px;
+    position: relative;
+    margin-left: 25%;
+
+}
+
+.menu-opcoes{
+    position: static;
+    text-align: center;
+}
+
+.menu-opcoes ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.busca,
+.menu-departamentos,
+.destaque img{
+    margin-right: 0;
+    width: 96%;
+}
+
+.painel{
+    width: auto;
+}
+
+.painel li{
+    width: 30%;
+}
+
+.painel img{
+    width: 100%;
+}
+
+#centro-distribuicao{
+    width: 96%;
+    float: right;
+	margin: 0 0px 10px 10px;
+}
+
+#centro-distribuicao img{
+    width: 96%;
+    float: right;
+	margin: 0 0px 10px 10px;
+}
+
+
+/* Adpatação para Iphone em paisagem */
+
+@media (min-width: 480px){
+
+    #centro-distribuicao{
+        width: 96%;
+        float: right;
+	    margin: 0 0px 10px 10px;
+    }
+
+    #centro-distribuicao img{
+        width: 96%;
+        float: right;
+	    margin: 0 0px 10px 10px;
+    }
+
+    .corpo{
+        width: 96%;
+    }
+
+    .container{
+        width: 96%;
+    }
+
+    header .logo img{
+        max-width: 100%;
+        text-align: left;
+        margin-left: 15%;
+        background-image: none;
+        
+    }
+
+    .menu-departamentos{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-departamentos nav > ul {
+        -webkit-column-count: 2;
+           -moz-column-count: 2;
+                column-count: 2;
+    }
+
+}
+
+/* Adaptação (Media query) para tablets 768px */
+@media (min-width: 720px){
+    header .logo img{
+        text-align: left;
+        background-image: none;
+    }
+
+    .menu-opcoes{
+        position: absolute;
+    }
+
+    .sacola{
+        display: block;
+    }
+
+    .painel li{
+        width: 15%;
+    }
+
+    .busca, .menu-departamentos{
+        margin-right: 1%;
+        width: 30%;
+    }
+
+    .menu-departamentos nav > ul{
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+                column-count: 1;
+    }
+
+    .destaque img{
+        width: 69%;
+    }
+
+    #centro-distribuicao{
+        width: 96%;
+        float: right;
+	    margin: 0 0px 10px 10px;
+    }
+
+    #centro-distribuicao img{
+        width: 96%;
+        float: right;
+	    margin: 0 0px 10px 10px;
+    }
+}
+
+/* Fim das adaptações mobile */
